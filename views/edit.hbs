@@ -1,0 +1,49 @@
+<form action="/{{id}}?_method=put" method="post">
+    <p>
+        <label for="partName">Part Name: </label>
+        <input type="text" value="{{partName}}" name="partName">
+    </p>
+    <br>
+    <p>
+        <label for="partNo">Part Number: </label>
+        <input type="text" value="{{partNo}}" name="partNo">
+    </p>
+    <br>
+    <p>
+        <label for="quantity">Quantity: </label>
+        <input type="number" value="{{quantity}}" name="quantity">
+    </p>
+    <br>
+    <p>
+        <label for="pricePer">Price each: </label>
+        <input type="number" value="{{pricePer}}" name="pricePer">
+    </p>
+    <br>
+    <p>
+        <label for="totalPartPrice">Total Price: </label>
+        <input type="number" value="{{totalPartPrice}}" name="totalPartPrice">
+    </p>
+    <br>
+    <p>
+        <label for="linkToPart">Link to Part: </label>
+        <input type="text" value="{{linkToPart}}" name="linkToPart">
+    </p>
+    <br>
+    <p>
+        <label for="notes">Notes</label>
+        <input type="text" value="{{notes}}" name="notes">
+    </p>
+    <br>
+    <p>
+        <label for="complete">Complete</label>
+        {{#if complete}}
+            <input type="checkbox" name="complte" checked>
+        {{else}}
+        <input type="checkbox" name="complte">
+        {{/if}}
+    </p>
+    <br>
+    <input type="submit" value="Update">
+</form>
+<br>
+<a href="/">Go back to Home</a>

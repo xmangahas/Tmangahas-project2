@@ -1,32 +1,32 @@
 [
     {
-          "partName": "DBA 4000 Series Slotted Rotors (Front)",
-          "partNo": "DBA42314S",
-          "quantity": 2,
-          "pricePer": 274.04,
-          "totalPartPrice": 548.08,
-          "linkToPart": "https://conceptzperformance.com/dba-4000-t3-series-sport-akebono-calipers-front-slotted-nissan-370z-infiniti-g37-q50-q60-q70-m37-m56-fx50-42314s-kt_p_28534.php",
-          "refLink": "https://www.myg37.com/forums/brakes-and-suspension/289209-dba-t3-4000-rotors-hawk-hps-pads-goodridge-ss-lines-motul-5-1-fluid.html",
-          "notes": "n/a",
-          "installed": false
+        "partName": "DBA 4000 Series Slotted Rotors (Front)",
+        "partNo": "DBA42314S",
+        "quantity": 2,
+        "pricePer": 274,
+        "totalPartPrice": 548,
+        "linkToPart": "https://conceptzperformance.com/dba-4000-t3-series-sport-akebono-calipers-front-slotted-nissan-370z-infiniti-g37-q50-q60-q70-m37-m56-fx50-42314s-kt_p_28534.php",
+        "refLink": "https://www.myg37.com/forums/brakes-and-suspension/289209-dba-t3-4000-rotors-hawk-hps-pads-goodridge-ss-lines-motul-5-1-fluid.html",
+        "notes": "n/a",
+        "installed": false
     },
     {
         "partName": "Project Mu B-FORCE Brake Pads (Front)",
         "partNo": "PBF210",
         "quantity": 1,
-        "pricePer": 114.42,
-        "totalPartPrice": 114.42,
+        "pricePer": 114,
+        "totalPartPrice": 114,
         "linkToPart": "https://conceptzperformance.com/project-mu-b-force-brake-pads-sport-model-w-akebono-calipers-front-nissan-370z-infiniti-g37-q50-q60-q70-m37-m56-fx50-pbf210_p_14540.php",
         "refLink": "https://www.myg37.com/forums/brakes-suspension/259619-tunerz-store-infiniti-g37-sport-project-mu-brake-pads.html",
         "notes": "n/a",
-        "installed": false
+        "installed": true
     },
     {
         "partName": "Work Emotion T7R Wheel",
-        "partNo": "DBA42314S",
+        "partNo": "n/a",
         "quantity": 4,
-        "pricePer": 480.00,
-        "totalPartPrice": 1920.00,
+        "pricePer": 480,
+        "totalPartPrice": 1920,
         "linkToPart": "https://www.evasivemotorsports.com/store/product/work-emotion-t7r-wheel-19x95-offset-25/",
         "refLink": "https://www.myg37.com/forums/build-threads/257609-ryne-s-graphite-shadow-awd-g37-coupe.html",
         "notes": "19x9.5 offset +25, 5x114.3",
