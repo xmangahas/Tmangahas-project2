@@ -2,11 +2,8 @@ const mongoose = require('mongoose')
 
 mongoose.Promise = Promise
 
-const mongoURI = 'mongodb://localhost/modTracker'
-
-mongoose
-  .connect(mongoURI, {useNewUrlParser: true})
-  .then(instance => console.log(`Connected to db: ${instance.connections[0].name}`))
-  .catch(error => console.log('Connection failed!', error))
+mongoose.connect('mongodb://localhost/modTracker', { useNewUrlParser: true }, () => {  // connecting to specific database
+    console.log("We're connected to mongoose!");
+});
 
 module.exports = mongoose

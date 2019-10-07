@@ -2,9 +2,6 @@ const express = require("express");
 const parser = require("body-parser");
 const methodOverride = require("method-override");
 
-const projectsController = require("./controllers/projects");
-const partsController = require("./controllers/parts");
-
 const app = express();
 
 app.set("view engine", "hbs");
@@ -12,11 +9,11 @@ app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json())
 app.use(methodOverride("_method"));
 
-app.use("/api/projects", projectsController);
+const partsController = require("./controllers/parts");
 app.use("/api/parts", partsController);
 
 app.get('/',(req,res) => {
-    res.redirect('/api/projects');
+    res.redirect('/api/parts');
 });
 
 app.listen(3000, () => {

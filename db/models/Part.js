@@ -10,12 +10,6 @@ const PartSchema = mongoose.Schema({
     refLink: String,
     notes: String,
     installed: Boolean,
-    projInc: [
-        {
-            ref: "Project",
-            type: mongoose.Schema.Types.ObjectId
-        }
-    ]
 });
 
 const Part = mongoose.model("part", PartSchema);

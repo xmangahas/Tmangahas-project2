@@ -1,0 +1,9 @@
+<h1>Mod Tracker</h1>
+
+<ul>
+  {{#each parts}}
+    <li><a href="/{{this.id}}">{{this.partName}}</a></li>
+  {{/each}}
+</ul>
+
+<a href="/new">Add New Part</a>
