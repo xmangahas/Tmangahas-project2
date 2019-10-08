@@ -30,16 +30,16 @@
     </p>
     <br>
     <p>
-        <label for="notes">Notes</label>
-        <input type="text" value="{{notes}}" name="notes">
+        <label for="notes">Notes:  </label>
+        <textarea rows = "5" cols = "60" value="{{notes}}" name="notes"></textarea>
     </p>
     <br>
     <p>
-        <label for="complete">Complete</label>
-        {{#if complete}}
-            <input type="checkbox" name="complte" checked>
+        <label for="installed">Installed?</label>
+        {{#if installed}}
+            <input type="checkbox" name="installed" checked>
         {{else}}
-        <input type="checkbox" name="complte">
+        <input type="checkbox" name="installed">
         {{/if}}
     </p>
     <br>

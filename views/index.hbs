@@ -1,8 +1,21 @@
-<h1>Mod Tracker</h1>
+<h1>Car Mod Tracker</h1>
 
 <ul>
   {{#each parts}}
-    <li><a href="/{{this.id}}">{{this.partName}}</a></li>
+    <li>
+      {{#if installed}}
+        <a href="/{{this.id}}"><strike>{{this.partName}}</strike></a>
+        <label for="installed"> ---> Installed? </label>
+      {{else}}
+        <a href="/{{this.id}}">{{this.partName}}</a>
+        <label for="installed"> ---> Installed? </label>
+      {{/if}}
+      {{#if installed}}
+        Yes
+      {{else}}
+        No
+      {{/if}}
+    </li>
   {{/each}}
 </ul>
 

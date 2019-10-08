@@ -10,9 +10,12 @@ app.use(parser.urlencoded({ extended: true }));
 // app.use(parser.json())
 app.use(methodOverride("_method"));
 
+
+
 const partsController = require("./controllers/parts");
 app.use("/", partsController);
 
+app.use('/assets', express.static('public'))
 // app.get('/',(req,res) => {
 //     res.redirect('/parts');
 // });

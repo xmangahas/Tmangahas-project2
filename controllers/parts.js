@@ -20,6 +20,9 @@ router.delete("/:id", (req, res) => {
 // For creating new, grab the new part
 router.post("/", (req, res) =>  {
     Part.create(req.body).then(part => {
+        if(part.totalPartPrice == null || 0) {
+            part.totalPartPrice = partSum(part.quantity,part.pricePer);
+        }
         res.redirect("/");
     })
 })
@@ -31,6 +34,7 @@ router.put("/:id", (req, res) => {
     } else {
         req.body.installed = false;
     }
+    req.body.totalPartPrice = partSum(req.body.quantity,req.body.pricePer);
     Part.findOneAndUpdate({_id: req.params.id}, req.body).then((part => {
         res.redirect(`/${part.id}`);
     }));
@@ -47,6 +51,7 @@ router.get("/", (req, res) => {
 // go to edit page
 router.get("/edit/:id", (req, res) => {
     Part.findOne({ _id: req.params.id }).then(part => {
+        part.totalPartPrice = partSum(part.quantity,part.pricePer);
         res.render("edit", part);
     });
 });
@@ -59,18 +64,17 @@ router.get("/new", (req, res) => {
 // Go to individual part
 router.get("/:id", (req, res) => {
     Part.findOne({_id: req.params.id}).then(part => {
-        console.log(req.params.id);
+        part.totalPartPrice = partSum(part.quantity,part.pricePer);
         res.render("show", part);
     });
 });
 
-
-
-
-
-
-
-
+// function
+function partSum (num1, num2) {
+    let total;
+    total = num1 * num2;
+    return total;
+}
 
 
 module.exports =  router;
