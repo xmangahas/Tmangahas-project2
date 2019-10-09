@@ -6,10 +6,10 @@
     * Link to request/response cycle - [Link to req/res cycle](https://i.imgur.com/uTQlyF6.jpg)
 
 * Brief Example:
-    * ![Homepage screenshot](https://i.imgur.com/pVhtvaj.png)
-    * ![Part page screenshot](https://i.imgur.com/O4CTggZ.png)
-    * ![Edit page screenshot](https://i.imgur.com/jJg28ir.png)
-    * ![New page screenshot](https://i.imgur.com/ktB4X5k.png)
+    * ![Homepage screenshot](https://i.imgur.com/jWTxx1s.png)
+    * ![Part page screenshot](https://i.imgur.com/AosIEej.png)
+    * ![Edit page screenshot](https://i.imgur.com/J5Iw7Dp.png)
+    * ![New page screenshot](https://i.imgur.com/Eoaoopd.png)
 
 * List of features:
     * Full CRUD functionality
