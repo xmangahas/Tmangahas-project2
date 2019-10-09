@@ -4,11 +4,9 @@
   {{#each parts}}
     <li>
       {{#if installed}}
-        <a href="/{{this.id}}"><strike>{{this.partName}}</strike></a>
-        <label for="installed"> ---> Installed? </label>
+        <a href="/{{this.id}}"><strike>{{this.partName}}</strike></a>---> Installed? 
       {{else}}
-        <a href="/{{this.id}}">{{this.partName}}</a>
-        <label for="installed"> ---> Installed? </label>
+        <a href="/{{this.id}}">{{this.partName}}</a>---> Installed?
       {{/if}}
       {{#if installed}}
         Yes
