@@ -1,7 +1,5 @@
 const mongoose = require('mongoose')
 
-mongoose.Promise = Promise;
-
 mongoose.connect('mongodb://localhost/modTracker', { useNewUrlParser: true }, () => {  // connecting to specific database
     console.log("We're connected to mongoose!");
 });
@@ -22,6 +20,6 @@ mongoose.connect('mongodb://localhost/modTracker', { useNewUrlParser: true }, ()
 //   )
 //   .catch(error => console.log("Connection failed!", error));
 
-
+mongoose.Promise = Promise;
 
 module.exports = mongoose
