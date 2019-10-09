@@ -1,6 +1,26 @@
 body {
-    background: #C3CDE6;
     font-family: 'Hind Siliguri', sans-serif;
+}
+
+html::after { 
+    background: linear-gradient(0deg,rgba(0, 255, 72, 0.4),rgba(251, 255, 255, 0.4)),url("../image/iStock-927781468.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
+}
+
+ul li {
+    font-size: 20px;
 }
 
 input[type=submit] {
@@ -13,3 +33,20 @@ input[type=submit] {
     border-radius: 5px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
 }
+
+input[type=text], textarea {
+    background-color: #C3CDE6;
+    font-size: 15px;
+}
+
+input[type=number] {
+    background-color: #C3CDE6;
+    font-size: 15px;
+}
+
+label {
+    display: inline-flex;
+    width: 140px;
+    text-align: right;  
+}
+

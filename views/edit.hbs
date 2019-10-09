@@ -1,38 +1,42 @@
+<h2>Edit Part</h2>
+
 <form action="/{{id}}?_method=put" method="post">
-    <p>
-        <label for="partName">Part Name: </label>
-        <input type="text" value="{{partName}}" name="partName">
-    </p>
-    <br>
-    <p>
-        <label for="partNo">Part Number: </label>
-        <input type="text" value="{{partNo}}" name="partNo">
-    </p>
-    <br>
-    <p>
-        <label for="quantity">Quantity: </label>
-        <input type="number" value="{{quantity}}" name="quantity">
-    </p>
-    <br>
-    <p>
-        <label for="pricePer">Price each: </label>
-        <input type="number" value="{{pricePer}}" name="pricePer">
-    </p>
-    <br>
-    <p>
-        <label for="totalPartPrice">Total Price: </label>
-        <input type="number" value="{{totalPartPrice}}" name="totalPartPrice">
-    </p>
-    <br>
-    <p>
-        <label for="linkToPart">Link to Part: </label>
-        <input type="text" value="{{linkToPart}}" name="linkToPart">
-    </p>
-    <br>
-    <p>
-        <label for="notes">Notes:  </label>
-        <textarea rows = "5" cols = "60" value="{{notes}}" name="notes"></textarea>
-    </p>
+    <ul>
+        <li>
+            <label for="partName">Part Name: </label>
+            <input type="text" value="{{partName}}" name="partName">
+        </li>
+        <br>
+        <li>
+            <label for="partNo">Part Number: </label>
+            <input type="text" value="{{partNo}}" name="partNo">
+        </li>
+        <br>
+        <li>
+            <label for="quantity">Quantity: </label>
+            <input type="number" value="{{quantity}}" name="quantity">
+        </li>
+        <br>
+        <li>
+            <label for="pricePer">Price each: </label>
+            <input type="number" value="{{pricePer}}" name="pricePer">
+        </li>
+        <br>
+        <li>
+            <label for="totalPartPrice">Total Price: </label>
+            <input type="number" value="{{totalPartPrice}}" name="totalPartPrice">
+        </li>
+        <br>
+        <li>
+            <label for="linkToPart">Link to Part: </label>
+            <input type="text" value="{{linkToPart}}" name="linkToPart">
+        </li>
+        <br>
+        <li>
+            <label for="notes">Notes:  </label>
+            <textarea rows = "5" cols = "60" value="{{notes}}" name="notes"></textarea>
+        </li>
+    </ul>
     <br>
     <p>
         <label for="installed">Installed?</label>

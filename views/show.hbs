@@ -1,18 +1,20 @@
-<h3>Part Name:  {{partName}}</h3>
-<h4>Part Number:  {{partNo}}</h4>
-<h4>Quantity:  {{quantity}}</h4>
-<h4>Price each:  {{pricePer}}</h4>
-<h4>Total Price:  {{totalPartPrice}}</h4>
-<h4>Link to Part:  <a href="{{linkToPart}}" target="blank">Go to Part</a></h4>
-<h4>Reference Link: <a href ="{{refLink}}" target="blank">Go to Reference</a></h4>
-<h4>Notes:  {{notes}}</h4>
-<h4>Installed?:  
-    {{#if installed}}
-        Yes
-    {{else}}
-        No
-    {{/if}}
-</h4>
+<h2>Part Name:  {{partName}}</h2>
+<ul>
+    <li>Part Number:  {{partNo}}</li>
+    <li>Quantity:  {{quantity}}</li>
+    <li>Price each:  {{pricePer}}</li>
+    <li>Total Price:  {{totalPartPrice}}</li>
+    <li>Link to Part:  <a href="{{linkToPart}}" target="blank">Go to Part</a></li>
+    <li>Reference Link: <a href ="{{refLink}}" target="blank">Go to Reference</a></li>
+    <li>Notes:  {{notes}}</li>
+    <li>Installed?:  
+        {{#if installed}}
+            Yes
+        {{else}}
+            No
+        {{/if}}
+    </li>
+</ul>
 <br>
 <form action="/{{id}}?_method=delete" method="POST">
     <input type="submit" value="Delete">

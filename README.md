@@ -3,10 +3,13 @@
 * Description:
     * This project is a full stack application for keeping track of car parts the user would like to purchase and install.  The application has complete CRUD functionality.  The user can add a new part (create), view the details of existing parts (read), edit the details of the parts (update), and delete parts (delete).
     * I approached this project by thinking of something that I already use.  When researching for car parts, I keep track of the details like part number, price, and links in a spreadsheet.  In the project, I first enabled the CRUD functionality, then slowly added features.
+    * Link to request/response cycle - [Link to req/res cycle](https://i.imgur.com/uTQlyF6.jpg)
 
 * Brief Example:
-    * ![Homepage screenshot](https://i.imgur.com/ujcIbju.jpg)
-    * ![Part page screenshot](https://i.imgur.com/GVkWryk.jpg)
+    * ![Homepage screenshot](https://i.imgur.com/pVhtvaj.png)
+    * ![Part page screenshot](https://i.imgur.com/O4CTggZ.png)
+    * ![Edit page screenshot](https://i.imgur.com/jJg28ir.png)
+    * ![New page screenshot](https://i.imgur.com/ktB4X5k.png)
 
 * List of features:
     * Full CRUD functionality
@@ -15,10 +18,9 @@
 
 * Future updates/Unresolved issues
     * Enable users to add categories to help organize parts
-    * Add some more styling
+    * Add more styling
 
 * List of technologies used:
-    * HTML
     * CSS
     * Javascript
     * Express
